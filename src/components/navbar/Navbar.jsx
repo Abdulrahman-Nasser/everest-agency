@@ -1,7 +1,9 @@
+import { Link as ScrollLink } from "react-scroll";
 import { Fig, Link, LinkBtn, Logo, Nav, NavLinks, SearchBar, SearchIcon, SearchInput, WrapperLinks, MobileBox, MobileLinks, MobileIcon } from "./NavbarStyle"
 import logo from "../../assets/images/logo.svg"
 import { IoIosSearch, IoIosMenu } from 'react-icons/io'
 import { useState } from "react"
+
 
 const Navbar = () => {
 
@@ -15,28 +17,29 @@ const Navbar = () => {
                         <Logo src={logo} alt='logo' />
                     </Fig>
                     <WrapperLinks>
-                        <Link href="">
+                        <ScrollLink to="header" smooth={true} duration={500}>
                             <LinkBtn className="linkBtn">الصفحة الرئيسية</LinkBtn>
-                        </Link>
-                        <Link href="">
+                        </ScrollLink>
+                        <ScrollLink to="services" smooth={true} duration={500}>
                             <LinkBtn className="linkBtn">الخدمات</LinkBtn>
-                        </Link>
-                        <Link href="Portfolio">
+                        </ScrollLink>
+                        <ScrollLink to="portfolio" smooth={true} duration={500}>
                             <LinkBtn className="linkBtn">سابقة الأعمال</LinkBtn>
-                        </Link>
-                        <Link >
+                        </ScrollLink>
+
+                        <ScrollLink to="reviews" smooth={true} duration={500}>
                             <LinkBtn className="linkBtn">شركاء النجاح</LinkBtn>
-                        </Link>
+                        </ScrollLink>
                         <Link href="">
                             <LinkBtn className="linkBtn">المدونات والمقالات</LinkBtn>
                         </Link>
                        
-                        <Link href="">
+                        <ScrollLink to="contact" smooth={true} duration={500}>
                             <LinkBtn className="linkBtn">تواصل معانا</LinkBtn>
-                        </Link>
-                        <Link href="">
+                        </ScrollLink>
+                        <ScrollLink to="portfolio" smooth={true} duration={500}>
                             <LinkBtn className="linkBtn">عنا</LinkBtn>
-                        </Link>
+                        </ScrollLink>
                     </WrapperLinks>
                 </NavLinks>
                 <SearchBar>
@@ -51,27 +54,29 @@ const Navbar = () => {
             </Nav>
             <MobileBox isToggle={toggleMobile}>
                 <MobileLinks isToggle={toggleMobile}>
-                    <Link href="">
-                        <LinkBtn className="linkBtn">الصفحة الرئيسية</LinkBtn>
-                    </Link>
-                    <Link href="">
-                        <LinkBtn className="linkBtn">الخدمات</LinkBtn>
-                    </Link>
-                    <Link href="">
-                        <LinkBtn className="linkBtn">سابقة الأعمال</LinkBtn>
-                    </Link>
-                    <Link href="">
-                        <LinkBtn className="linkBtn">شركاء النجاح</LinkBtn>
-                    </Link>
-                    <Link href="">
-                        <LinkBtn className="linkBtn">المدونات والمقالات</LinkBtn>
-                    </Link>
-                    <Link href="">
-                        <LinkBtn className="linkBtn">تواصل معانا</LinkBtn>
-                    </Link>
-                    <Link href="">
-                        <LinkBtn className="linkBtn">عنا</LinkBtn>
-                    </Link>
+                <ScrollLink to="header" smooth={true} duration={500}>
+                            <LinkBtn className="linkBtn">الصفحة الرئيسية</LinkBtn>
+                        </ScrollLink>
+                        <ScrollLink to="services" smooth={true} duration={500}>
+                            <LinkBtn className="linkBtn">الخدمات</LinkBtn>
+                        </ScrollLink>
+                        <ScrollLink to="portfolio" smooth={true} duration={500}>
+                            <LinkBtn className="linkBtn">سابقة الأعمال</LinkBtn>
+                        </ScrollLink>
+
+                        <ScrollLink to="reviews" smooth={true} duration={500}>
+                            <LinkBtn className="linkBtn">شركاء النجاح</LinkBtn>
+                        </ScrollLink>
+                        <Link href="">
+                            <LinkBtn className="linkBtn">المدونات والمقالات</LinkBtn>
+                        </Link>
+                       
+                        <ScrollLink to="contact" smooth={true} duration={500}>
+                            <LinkBtn className="linkBtn">تواصل معانا</LinkBtn>
+                        </ScrollLink>
+                        <ScrollLink to="portfolio" smooth={true} duration={500}>
+                            <LinkBtn className="linkBtn">عنا</LinkBtn>
+                        </ScrollLink>
                 </MobileLinks>
                 {toggleMobile && <SearchBar className='search-mobile'>
                     <SearchIcon>

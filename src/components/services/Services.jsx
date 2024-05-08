@@ -39,7 +39,7 @@ const Services = () => {
   return (
     <Section>
       <Container>
-        <Heading>Services</Heading>
+        <Heading>الخدمات</Heading>
         {error && <p>Error: {error}</p>}
         <Grid>
           {serviceData.map(({ description, path, id }) => (

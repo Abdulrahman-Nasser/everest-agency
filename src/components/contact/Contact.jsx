@@ -10,8 +10,8 @@ const Contact = () => {
                 <Flex>
                     <Form>
                         <BoxNames>
-                            <Input type='text' placeholder='الاسم الاول' />
                             <Input type='text' placeholder='الاسم الاخير' />
+                            <Input type='text' placeholder='الاسم الاول' />
                         </BoxNames>
                         <Input type='email' placeholder='البريد الالكتروني' />
                         <Input type='text' placeholder='الموضوع' />
