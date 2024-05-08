@@ -58,8 +58,8 @@ export const SliderContainer = styled.div`
 
 export const Title = styled.header`
   background-size: cover;
-  background-position: center center;
-  height: 70svh;
+  background-position: center;
+  height: 70vh;
   position: relative;
 `;
 

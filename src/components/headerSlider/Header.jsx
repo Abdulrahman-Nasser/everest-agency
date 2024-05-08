@@ -142,7 +142,7 @@ const Header = () => {
       <Slider {...settings}>
         {sliderImages.map((image, index) => (
           <Title key={index}>
-            <img src={image.path} alt={`Slide ${index}`} />
+            <img src={image.path} alt={`Slide ${index}`} style={{ width:"100%" , height: "100%"}} />
             <Content>
               <Heading1>استشارتك </Heading1>
               <Heading2>مجانية</Heading2>
